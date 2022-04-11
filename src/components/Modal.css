@@ -1,0 +1,23 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-height: calc(100vh);
+    overflow-y: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.modal {
+    display: block;
+    width: 400px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 30px 15px;
+    border-radius: var(--border-radius);
+    z-index: 2;
+    background-color: var(--gray-10);
+}

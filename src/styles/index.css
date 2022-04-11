@@ -1,0 +1,44 @@
+@import url('https://api.fontshare.com/css?f[]=ranade@1,2&display=swap');
+@import url('https://api.fontshare.com/css?f[]=general-sans@1,2&display=swap');
+@import url('https://api.fontshare.com/css?f[]=satoshi@1,2&display=swap');
+@import 'colors.css';
+@import 'scrollbar.css';
+
+:root {
+  --accent-font: 'Ranade', sans-serif;
+  --primary-font: 'Satoshi', sans-serif;
+  --header-height: 48px;
+  --shell-width: 255px;
+  --default-padding: 16px;
+  --border-radius: 8px;
+  --light: var(--gray-70);
+  --primary-text-color: #24232A;
+  --secondary-text-color: var(--gray-80);
+  --transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+body {
+  background-color: #feffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+input[type="text"] {
+  padding: 4px 8px;
+  background-color: var(--gray-10);
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}

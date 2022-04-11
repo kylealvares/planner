@@ -1,0 +1,75 @@
+.shell {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    padding-top: 16px;
+    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
+    max-height: calc(100vh - var(--header-height));
+    width: var(--shell-width);
+    overflow-y: auto;
+    border-right: 1px solid var(--gray-20);
+}
+
+.shell svg {
+    height: 20px;
+    min-width: 20px;
+    width: 20px;
+    margin-right: 8px;
+    stroke-width: 2px;
+}
+
+.shell a.selected svg {
+    stroke: black;
+}
+
+.shell a {
+    display: flex;
+    vertical-align: center;
+    margin: 0 16px;
+    padding: 8px;
+    border-radius: var(--border-radius);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--light);
+    transition: var(--transition);
+}
+
+.shell a:hover {
+    background-color: var(--gray-10);
+    transition: var(--transition);
+}
+
+.shell a span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shell a.selected {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.shell hr {
+    margin: 8px 32px;
+    border: none;
+    border-top: 1px solid var(--gray-30);
+}
+
+.shell p.section {
+    padding: 8px;
+    padding-left: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.35px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shell p.section:not(:first-child) {
+    margin-top: 16px;
+}
