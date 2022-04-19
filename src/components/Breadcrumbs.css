@@ -1,0 +1,28 @@
+.breadcrumbs {
+    margin-bottom: 8px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.dark .breadcrumbs a {
+    color: var(--gray-40);
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.breadcrumbs span {
+    margin: 0 8px;
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+    font-size: 14px;
+    font-weight: 450;
+    color: var(--gray-40);
+}

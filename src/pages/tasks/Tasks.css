@@ -1,0 +1,31 @@
+.tasks {
+    padding: var(--default-padding);
+}
+
+.tasks .search {
+    display: flex;
+    align-items: center;
+    height: 54px;
+    margin-left: calc(0px - var(--default-padding));
+    margin-right: calc(0px - var(--default-padding));
+    padding: 0 var(--default-padding);
+    border-bottom: 1px solid var(--gray-20);
+    position: sticky;
+    top: 0
+}
+
+.tasks .search svg {
+    height: 16px;
+    width: 16px;
+    color: var(--gray-60);
+}
+
+.tasks .search input {
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.tasks .no-tasks {
+    margin-top: 32px;
+    text-align: center;
+}

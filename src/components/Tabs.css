@@ -1,0 +1,31 @@
+.tabs {
+    display: flex;
+    margin-left: calc(0px - var(--default-padding));
+    margin-right: calc(0px - var(--default-padding));
+    padding: 0 var(--default-padding);
+    padding-top: 16px;
+    border-bottom: 1px solid var(--gray-20);
+
+}
+
+.tabs .tab {
+    margin-bottom: -1px;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray-60);
+    border-bottom: 2px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.tabs .tab:not(.active):hover {
+    border-bottom: 2px solid var(--gray-80);
+    transition: var(--transition);
+}
+
+.tabs .tab.active {
+    font-weight: 600;
+    color: var(--gray-100);
+    border-bottom: 2px solid var(--blue-60);
+}

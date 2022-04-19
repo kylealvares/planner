@@ -3,13 +3,35 @@
     top: var(--header-height);
     left: 0;
     padding-top: 16px;
-    min-height: calc(100vh - var(--header-height));
-    min-height: calc(100vh - var(--header-height));
-    max-height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height) - var(--shell-bottom));
+    min-height: calc(100vh - var(--header-height) - var(--shell-bottom));
+    max-height: calc(100vh - var(--header-height) - var(--shell-bottom));
     width: var(--shell-width);
     overflow-y: auto;
     border-right: 1px solid var(--gray-20);
+    background-color: white;
 }
+
+.dark .shell {
+    border-right: 1px solid var(--gray-80);
+    background-color: var(--bg-dark);
+}
+
+.shell-bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    width: var(--shell-width);
+    background-color: white;
+    border-right: 1px solid var(--gray-20);
+}
+
+.dark .shell-bottom {
+    border-right: 1px solid var(--gray-80);
+    background-color: var(--bg-dark);
+} 
 
 .shell svg {
     height: 20px;
@@ -19,13 +41,22 @@
     stroke-width: 2px;
 }
 
+.dark .shell a svg {
+    stroke: var(--gray-20);
+}
+
 .shell a.selected svg {
     stroke: black;
+}
+
+.dark .shell a.selected svg {
+    stroke: var(--gray-20);
 }
 
 .shell a {
     display: flex;
     vertical-align: center;
+    justify-content: space-between;
     margin: 0 16px;
     padding: 8px;
     border-radius: var(--border-radius);
@@ -36,8 +67,18 @@
     transition: var(--transition);
 }
 
+.shell a div {
+    display: flex;
+    align-items: center;
+}
+
 .shell a:hover {
     background-color: var(--gray-10);
+    transition: var(--transition);
+}
+
+.dark .shell a:hover {
+    background-color: var(--gray-70);
     transition: var(--transition);
 }
 
@@ -47,15 +88,27 @@
     text-overflow: ellipsis;
 }
 
+.dark .shell a span {
+    color: var(--gray-20);
+}
+
 .shell a.selected {
     color: black;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.dark .shell a.selected {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .shell hr {
-    margin: 8px 32px;
+    margin: 22px 32px;
     border: none;
-    border-top: 1px solid var(--gray-30);
+    border-top: 1px solid var(--gray-20);
+}
+
+.dark .shell hr {
+    border-top: 1px solid var(--gray-70);
 }
 
 .shell p.section {
@@ -70,6 +123,68 @@
     text-overflow: ellipsis;
 }
 
+.dark .shell p.section {
+    color: var(--gray-40);
+}
+
 .shell p.section:not(:first-child) {
     margin-top: 16px;
+}
+
+.shell .number.blue {
+    background-color: var(--blue-60);
+}
+
+.shell .number.red {
+    background-color: var(--red-60);
+}
+
+.shell .number {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: var(--border-radius);
+}
+
+/* ACCOUNT */
+
+.shell-bottom .account {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+    padding: 8px 16px;
+}
+
+.shell-bottom .account img {
+    margin-right: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 1px solid var(--gray-100); */
+}
+
+.shell-bottom .account p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.shell-bottom .account .name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.shell-bottom .account .email {
+    font-size: 13px;
+    color: var(--gray-80);
+}
+
+.dark .shell-bottom .account .name {
+    color: var(--gray-10);
+}
+
+.dark .shell-bottom .account .email {
+    color: var(--gray-30);
 }

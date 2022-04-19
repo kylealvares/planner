@@ -8,8 +8,12 @@
     height: var(--header-height);
     width: 100vw;
     padding: 0 16px;
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
     border-bottom: 1px solid var(--gray-20);
+}
+
+.dark .header {
+    border-bottom: 1px solid var(--gray-80);
 }
 
 .header .brand {
@@ -17,6 +21,10 @@
     font-weight: 600;
     font-family: var(--accent-font);
     text-decoration: none;
+}
+
+.dark .header .brand {
+    color: white;
 }
 
 .header svg,

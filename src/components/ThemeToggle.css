@@ -1,0 +1,48 @@
+.theme-toggle {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 4px 16px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: var(--gray-30);
+}
+
+.dark .theme-toggle {
+    background-color: var(--gray-80);
+}
+
+.theme-toggle .option {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle svg {
+    padding: 3px 8px;
+    height: 22px;
+    width: 32px;
+    stroke: black;
+    margin: 0;
+}
+
+.dark .theme-toggle svg {
+    stroke: var(--gray-10);
+} 
+
+.theme-toggle .selected {
+    background-color: var(--gray-10);
+    border-radius: var(--border-radius);
+}
+
+.dark .theme-toggle .selected {
+    background-color: var(--gray-60);
+}
+
+.theme-toggle .selected svg {
+    stroke: black;
+    padding: 3px 12px;
+    width: 40px;
+}
+
+.dark .theme-toggle .selected svg {
+    stroke: white;
+}

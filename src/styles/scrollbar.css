@@ -9,9 +9,9 @@
     background: transparent;
 }
 
-::-webkit-scrollbar-track:hover {
+/* ::-webkit-scrollbar-track:hover {
     border-left: 1px solid var(--gray-60);
-}
+} */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
