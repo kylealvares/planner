@@ -3,6 +3,7 @@
 @import url('https://api.fontshare.com/css?f[]=satoshi@1,2&display=swap');
 @import 'colors.css';
 @import 'scrollbar.css';
+@import 'animations.css';
 
 :root {
   --accent-font: 'Ranade', sans-serif;
@@ -11,7 +12,7 @@
   --shell-width: 255px;
   --shell-bottom: 126px;
   --default-padding: 16px;
-  --border-radius: 8px;
+  --border-radius: 6px;
   --light: var(--gray-70);
   --bg-dark: #191c1e;
   --primary-text-color: #24232A;
@@ -68,6 +69,15 @@ button {
 button:hover {
   filter: brightness(115%);
   transition: var(--transition);
+}
+
+button.ghost {
+  background-color: transparent;
+  color: var(--blue-60);
+}
+
+button.ghost:hover {
+  text-decoration: underline;
 }
 
 .space-between {

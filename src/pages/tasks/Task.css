@@ -5,6 +5,11 @@
     margin-right: calc(0px - var(--default-padding));
     padding: 16px var(--default-padding);
     border-bottom: 1px solid var(--gray-20);
+    cursor: pointer;
+}
+
+.dark .task {
+    border-bottom: 1px solid var(--gray-70);
 }
 
 .task .checkbox {

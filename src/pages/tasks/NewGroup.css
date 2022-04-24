@@ -1,0 +1,8 @@
+.new-group .submit {
+    display: flex;
+    justify-content: right;
+}
+
+.new-group .submit * {
+    margin-left: 4px;
+}

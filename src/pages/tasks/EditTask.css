@@ -1,0 +1,19 @@
+.edit-task h1 {
+    margin-bottom: 8px;
+}
+
+.edit-task form * {
+    margin-top: 12px;
+}
+
+.edit-task input[type=text] {
+    width: 100%;
+    border-radius: 0;
+    /* border: 1px solid var(--gray-20); */
+}
+
+.edit-task .justify-right {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}

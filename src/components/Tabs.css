@@ -8,6 +8,10 @@
 
 }
 
+.dark .tabs {
+    border-bottom: 1px solid var(--gray-70);
+}
+
 .tabs .tab {
     margin-bottom: -1px;
     padding: 8px;
@@ -19,6 +23,10 @@
     cursor: pointer;
 }
 
+.dark .tabs .tab {
+    color: var(--gray-40);
+}
+
 .tabs .tab:not(.active):hover {
     border-bottom: 2px solid var(--gray-80);
     transition: var(--transition);
@@ -28,4 +36,8 @@
     font-weight: 600;
     color: var(--gray-100);
     border-bottom: 2px solid var(--blue-60);
+}
+
+.dark .tab.active {
+    color: var(--gray-20);
 }
