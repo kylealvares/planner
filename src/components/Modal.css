@@ -48,6 +48,7 @@
 }
 
 .dark .modal input[type="text"] {
+    border: 2px solid var(--gray-60);
     background-color: var(--gray-100);
 }
 
