@@ -38,6 +38,10 @@
     animation: focusNewTask 500ms ease-out;
 }
 
+.dark .tasks .new-task {
+    animation: focusNewTaskDark 500ms ease-out;
+}
+
 .dark .tasks .search,
 .dark .tasks .new-task {
     background-color: var(--gray-80);
@@ -68,5 +72,14 @@
     }
     100% {
         background-color: var(--gray-10);
+    }
+}
+
+@keyframes focusNewTaskDark {
+    0% {
+        background-color: var(--blue-60);
+    }
+    100% {
+        background-color: var(--gray-70);
     }
 }

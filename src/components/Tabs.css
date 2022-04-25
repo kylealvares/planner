@@ -5,7 +5,7 @@
     padding: 0 var(--default-padding);
     padding-top: 16px;
     border-bottom: 1px solid var(--gray-20);
-
+    /* overflow-y: hidden; */
 }
 
 .dark .tabs {
@@ -21,6 +21,7 @@
     border-bottom: 2px solid transparent;
     transition: var(--transition);
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .dark .tabs .tab {

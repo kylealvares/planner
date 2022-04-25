@@ -55,3 +55,7 @@
 .modal input:focus {
     border: 2px solid var(--blue-60);
 }
+
+.dark .modal input:focus {
+    border: 2px solid var(--blue-60);
+}

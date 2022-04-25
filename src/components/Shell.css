@@ -188,3 +188,9 @@
 .dark .shell-bottom .account .email {
     color: var(--gray-30);
 }
+
+@media screen and (max-width: 1024px) {
+    .shell-container {
+        display: none;
+    }
+}

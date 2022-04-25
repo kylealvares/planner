@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <div className="header">
-            <div>
+            <div className='logo'>
+                {/* <button>
+                    <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6H28V8H4zM4 24H28V26H4zM4 12H28V14H4zM4 18H28V20H4z"></path><title>Menu</title></svg>
+                </button> */}
                 <Link to="/" className="brand">Planner</Link>
             </div>
             <div>

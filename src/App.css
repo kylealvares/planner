@@ -2,3 +2,9 @@
   margin-top: var(--header-height);
   margin-left: var(--shell-width);
 }
+
+@media screen and (max-width: 1024px) {
+  .App {
+    margin-left: 0;
+  }
+}
